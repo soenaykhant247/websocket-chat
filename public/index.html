@@ -21,9 +21,9 @@
 <button onclick="sendMessage()">Send</button>
 
 <script>
-    const socket = io("http://localhost:5000");
+    const socket = io("http://localhost:5001");
 
-    fetch("http://localhost:5000/messages")
+    fetch("http://localhost:5001/messages")
         .then(response => response.json())
         .then(messages => {
             let chatbox = document.getElementById("chatbox");
